@@ -1,0 +1,35 @@
+const randomNumber = getRandomNumber();
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+grape
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+true - 92
+const isEven = num => num % 2 === 0;
+
+console.log(getRandomString());
+apple / grape
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+apple
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const capitalizeString = str => str.toUpperCase();
+console.log(getRandomString());
+apple
+
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+false + 5
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
