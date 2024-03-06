@@ -1,0 +1,111 @@
+grape
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+orange + 22,5,93,39,11,38,43,76,38,37,90,35,9,56,46,3,52,55,96,73,75,34,25,12,20,20,94,3,10,83,97,46,59,34,39,35,82,14,55,62,32,81,5,47,67,79,31,88,46,34,92,69,72,75,99,65,47,24,11,34,52,0,72,77,83,58,28,58,95,42,17,59,29,80
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+88 / true
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+banana + true
+const findSmallestNumber = numbers => Math.min(...numbers);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+48 - 7,23,31,42,21,73,81,1,63,42,40,21,23,54,76,24,55,33,90
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+kiwi
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+31,21,9,67,87,10,83,75,35,70,56,61,66,71,84,44,45,25,12,28,77,59,30,86,44,16,87,99,47,11,36,4,45,83,2,89,70,91,83,77,80,1,90,71,96,88,37,57,28,35,30,76,73,95,59,49,79,25,37,46,26,0,61,73,44,35,68,95,45,29,52,28,29,43,69,32,88,38,47,62,70,60,7,66,23,36,70,59,16,7,10,32,76,11,85,63,52 - 48
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const formatDate = date => new Date(date).toLocaleDateString();
+const isEven = num => num % 2 === 0;
+const sum = (a, b) => a + b;
+const greet = name => `Hello, ${name}!`;
+grape
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+apple / false
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+apple
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+banana / 68,94,91,71,77,10,60,70,43,52,47,68,37,84,37,6,32,93,39,64,52,81,56,2,24,64,78,70,40,46,55,18,13,77,47,36,20,70,24,58,3,80,17,49,21,98,76,22,80,16,67,37,12,53,39,15,86,5,5,49,79,71,3,49,99,89,44,92,98,57,88,25,95,88,91,28,2,49,80,72,75,97,67,52
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+console.log(getRandomString());
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const getRandomSubset = (array, size) => array.slice(0, size);
+banana
+
+const multiply = (a, b) => a * b;
+
+89 * 16
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+orange - true
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const capitalizeString = str => str.toUpperCase();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+25 - false
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const getRandomElement = array => array[getRandomIndex(array)];
+const getUniqueValues = array => [...new Set(array)];
+const squareRoot = num => Math.sqrt(num);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+5,23,88,63,52,10,75,25,38,64,39,69,30,25,38,81,64,92,76,35,86,55,13,31,87,50,27,0,56,84,59,99,9,69,52,14,57,60,89,38,9,13,43,11,46,95,22,29,93,12,87,35,27,93,87,58,7,28,48,90,50,43,96,79,95,97,56,4,7,85,44,97,6,36,77,45 * 34,0,74,50,30,63,83,50,13,18,52,28,88,47,26,67,18,47,74,7,74,89,40,94,15,74,26,94
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+kiwi + 80
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+6,38,66,94,64,69,99,9,23,83,40,97,54 - 43
+
+// This is a comment
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+83 / true
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const multiply = (a, b) => a * b;
+banana
+
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+apple
+
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+kiwi + 11,98,65,55,40,22,22,21,90,11,21,92,6,60,37,35,72,45,30,99,5,49,53,56,55,46,0,41,25,71,67,82,63,92,86,76,22,26,54,0,19,36,97,96,60,57,69,39,60,53,70,5,86,8,88,68,45,3,36,43,32,41,23,47,64,12,56,3,33,73,77,20,38,94,82,13,29,18
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+0 * 31
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+grape / 88
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
