@@ -1,0 +1,65 @@
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const removeDuplicates = array => Array.from(new Set(array));
+orange
+
+function addNumbers(a, b) { return a + b; }
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const sum = (a, b) => a + b;
+const findSmallestNumber = numbers => Math.min(...numbers);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+80 / 41
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const getUniqueValues = array => [...new Set(array)];
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+apple
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+22,83,43,81,50,91,0,61,76,29,99,28,82,76,78,34,89,14,18,45,50,91,53,72,0,81,80,39,81,0,69,4,36,50,27,29,63,88,48,7,34,2,85,8,80,93,96 * true
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+72,13,97,7,96,55,62,36,71,88,99,41,12,77,4,25,32,81,26,30,71,56,16,82,8,80,36,46,37,70,81,49,79,75,56,91,60,70,47,6,21,32,49,38,85,6,20,93,82,37,7,85,36,51,63,49,61,30,95,32,71,9,93,63,94,49,49,42,68,44,57,21,28,44,97 - false
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+true + 11,48,6,47,14,8,78,63,19,66,80,59,87,66,4,31,56,34,92,82,41,29,53,8,57,60,35,21,7,47,17,67,19,11,16,1,56,79,70,83,36,48,92,77,15,8,84,61,83
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const getRandomElement = array => array[getRandomIndex(array)];
+93,11,53,91,53,98,37,9,82,58,0,63,94,69,99,91,33,13,31,47,40,6,64,76,7,5,60,82,34,30,67,75,46,91,25,21,35,0,19,79,24,90,43,11,19,48,11,37,86,83,36,27,70,80,7,52,29,91,41,73,37,24,65,96,24,15,82,36,84 / 77
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const getRandomElement = array => array[getRandomIndex(array)];
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+apple
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+86,7,57,27,60,9,19,65 + 19,17,93,40,57,22,60,86,93,63,19,6,36,89,52,54,18,81,28,67,7,79,44,51,89,7,50,2
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const greet = name => `Hello, ${name}!`;
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const randomNumber = getRandomNumber();
+function addNumbers(a, b) { return a + b; }
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+34,96,9,81,84,63,87,23,3,31,66,21,44,60,54,94,16,35,67,39,32,48,40,45 * orange
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+apple
+
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+38,34,56,52,58,45,24,23,98,79,69,40,26,8,62,4,74,30,9,36,79,59,48,49,32,33,47,75,29,96,64,36,51,5,24,20,51,84,74,54,39,79,71,4,46,59,56,52,11,8,16,66,25,20 - 58,78,89,52,24,39,27,22,70,19,72,95,36,59,98,28,60,56,94,28,18,19,20,94,66,69,54,28,90,37,37,17,47,46,80,65,55,78,75,53,74,5,25,48,25,48,24,50,81,82,66,59,41,24,37,33,59,28,57,81,33,88,49,1,32,25,19,73,51,65,17,27,97,72,48,66,24,65,91,54
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const formatDate = date => new Date(date).toLocaleDateString();
