@@ -1,0 +1,56 @@
+61,21,21,78,24,74,94,67,32,77,48,43,93,57,11,91,84,34,56,71,46,34,69,57,39,72,36,76,61,11,17,48,60,48,93,66,20,30,82,74,10,59,70,14,7,75,70,27,78,79,4,43,50,23,28,8,69,96,12,92,45,46,63,12,35,16,47,49,65,53,19,44,92,67,61,94,46,89,19,95,56,56,51,54,28,72,86,61,5,69,49,65,79 * false
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+false * 11
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+31,6,41,95,68,38,39,62,73,29,48,85,74,48,58,61,60,26,47,86,20,8,22,63,41,3,48,31,87,69,46,85,81,39,10,75,1,31,47,76,12,86,15,14,60,0,74,78 / 50
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const reverseString = str => str.split("").reverse().join("");
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+const getUniqueValues = array => [...new Set(array)];
+const isEven = num => num % 2 === 0;
+true - grape
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+false + orange
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+apple / 18,20,73,59,7,95
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+42,64,51,70,69,35,43,55,17,23,57,68,55,64,43,67,32,0,9,60,22,2,4,84,28,36,17,23,87,56,50,18,54,43,21,30,6,77,14,17,45,24,89,29,76,71,24,88,55,91,29,53,48,13,91,0,14,79,35,21,87,75,57,83,94,89,64,16,7,95,86 + apple
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+orange
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const isPalindrome = str => str === str.split("").reverse().join("");
+let array = getRandomArray(); array.forEach(item => console.log(item));
+orange + 86,70,64,51,7,95,31,11,24,30,55,1,72,78,76,29,34,56,21,13,16,17,92,74
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const sum = (a, b) => a + b;
+const removeDuplicates = array => Array.from(new Set(array));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+// This is a comment
+
+13,81,61,50,78,19,98,60,52,99,42,73,71,14,19,89,57,51,47,80,65,69,82,39 - 38
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+apple * 77
+const isPalindrome = str => str === str.split("").reverse().join("");
+// This is a comment
+false / apple
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
